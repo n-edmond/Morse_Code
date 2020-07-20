@@ -1,0 +1,2 @@
+C:\Users\mepoy\OneDrive\Desktop\CS303\Project 2  Morse Code\Morse Code\Debug\Morse Code.exe
+C:\Users\mepoy\OneDrive\Desktop\CS303\Project 2  Morse Code\Morse Code\Debug\Morse Code.pdb
