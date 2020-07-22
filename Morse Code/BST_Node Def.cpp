@@ -18,7 +18,7 @@ BST_Node::BST_Node()
 
 BST_Node::BST_Node(char chr, char* string)
 {//parameterized constructor
-	strcpy(given_string, string);//copies the string parameter into the given_string array.
+	strcpy_s(given_string, string);//copies the string parameter into the given_string array.
 	this->character = chr;
 	this->nodeLeft = nullptr;
 	this->nodeRight = nullptr;
@@ -54,7 +54,7 @@ void BST_Node::set_Character(const char chr)
 }
 void BST_Node::set_String(char* const str)
 {
-	strcpy(given_string, str);
+	strcpy_s(given_string, str);
 }
 void BST_Node::set_Left(BST_Node* const nLeft)
 {

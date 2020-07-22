@@ -1,1 +1,5 @@
-﻿  Morse Code.vcxproj -> C:\Users\mepoy\OneDrive\Desktop\CS303\Project 2  Morse Code\Morse Code\Debug\Morse Code.exe
+﻿  BST_Node Def.cpp
+C:\Users\mepoy\OneDrive\Desktop\CS303\Project 2  Morse Code\Morse Code\BST_Node Def.cpp(13,7): warning C4101: 'given_string': unreferenced local variable
+  Main.cpp
+  Generating Code...
+  Morse Code.vcxproj -> C:\Users\mepoy\OneDrive\Desktop\CS303\Project 2  Morse Code\Morse Code\Debug\Morse Code.exe
