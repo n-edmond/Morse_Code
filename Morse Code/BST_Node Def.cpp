@@ -26,7 +26,7 @@ BST_Node::BST_Node(char chr, char* string)
 }//parameterized constructor
 BST_Node::~BST_Node()
 {//destructor
-	cout << "DELETE ME. DESTRUCTOR FUNCT. TEST" << endl;
+	//cout << "DELETE ME. DESTRUCTOR FUNCT. TEST" << endl;
 }
 
 //GETTERS

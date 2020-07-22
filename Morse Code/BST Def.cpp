@@ -12,9 +12,10 @@ BST::BST()
 	nodeParent = nullptr;
 	fstream MorseTxt;
 	
-	MorseTxt.open("morse");
+	MorseTxt.open("morse.txt");
 	if (MorseTxt.fail()) {
 		cout << "Could not open file." << endl;
+		return;
 	}
 
 	while (!MorseTxt.eof())
@@ -35,6 +36,7 @@ BST::~BST()
 void BST::display_Binary_Tree()
 {//will display the binary search tree of the morse code in tree form
 	cout << "FIX ME" << endl;
+
 }
 
 void BST::display()
@@ -43,8 +45,8 @@ void BST::display()
 }
 
 void BST::display(BST_Node* Tree)
-{//NOT SURE IF I WANT THIS? KEEP IDEA JUST IN CASE
-	cout << "FIX ME" << endl;
+{//displays the morse code chart
+	//cout << "FIX ME" << endl;
 	if (Tree != nullptr)
 	{
 		display(Tree->get_Left_Node());
@@ -93,8 +95,8 @@ string BST::find(BST_Node* Tree, char chr)
 		find(Tree->get_Right_Node(), chr);
 		if (Tree->get_Character() == chr)
 		{
-			cout << "TEST    " << Tree->getString() << endl;
-			S = Tree->getString();
+			cout << Tree->getString() << "  ";//inserted space for readability of morse code
+			//S = Tree->getString();
 		}
 	}
 	return S;//might skip the variable step still laying down ideas before debugging
@@ -106,7 +108,7 @@ void BST::erase(BST_Node* main_root)
 	{
 		erase(main_root->get_Left_Node());
 		erase(main_root->get_Right_Node());
-		cout << "TEST     ERASE FUNC  " << main_root->get_Character() << endl;
+		//cout << "TEST     ERASE FUNC  " << main_root->get_Character() << endl;
 		delete(main_root);
 	}
 }
