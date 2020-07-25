@@ -139,13 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BST Def.cpp" />
-    <ClCompile Include="BST_Node Def.cpp" />
+    <ClCompile Include="Binary_Tree Def.cpp" />
+    <ClCompile Include="BST_Def.cpp" />
+    <ClCompile Include="Conversion_Def.cpp" />
+    <ClCompile Include="HashTbl_Def.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Binary_Tree.h" />
     <ClInclude Include="BST.h" />
-    <ClInclude Include="BST_Node.h" />
+    <ClInclude Include="Conversions.h" />
+    <ClInclude Include="HashTbl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

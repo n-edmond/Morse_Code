@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
-#include "BST.h"
+#include "Conversions.h"
+#include "Binary_Tree.h"
 
 using namespace std;
 
@@ -12,69 +12,30 @@ The program will give an error message and end if an unrecognized character is d
 
 *************************************************************************************************************************************************/
 
-void encoder(string str);//encodes a given string
-void decoder(string str);//decodes a given string
 
 int main()
 {
-	string userString = "AbCdefghijklmNopqrsTuvwxyZ"; //change string here. test value
-	string userStringMorse = "_. ._";//change morse code string here. test value
-    BST Tree;
+	string userString = "Te St"; //change string here. test value
+	string userStringMorse = "_ . ... _";//change morse code string here. test value
+    Convert morse_converter;
+	morse_converter.retrieve_File_Info();
+	string encoded_val = morse_converter.encoder(userString);
+	string decoded_val = morse_converter.decoder(userStringMorse);
 
-    cout << "Binary Search Tree\n-----------------\n";
-    Tree.display_Binary_Tree();
-    cout << endl << endl;
+	cout << "\n\n                  Binary Search Tree\n ----------------------------------------------------\n";
+	morse_converter.print_BST();
 
-    cout << "Morse Code Chart:\n-----------------\n";
-    Tree.display();
-    cout << endl << endl;
+	
 
+	//cout << encoded_val;
+	cout << "\n\n\n           Encoding the given string: " << userString << " \n ----------------------------------------------------\n" << encoded_val << endl << endl;
+	//cout << "\n\n\n           Decoding the given morse code: " << userStringMorse << " \n ----------------------------------------------------\n" << decoded_val << endl << endl;
+	cout << "Please uncomment the desired function to check encoder/decoder" << endl;
+	
 
-	//encode here
-    encoder(userString);
-
-	//decode here
-    //decoder(userStringMorse);
 
 	return 0;
 }
-void encoder(string str)
-{//encodes a given string by removing any spaces and adding char to vector OR STRING NOT SURE WHICH I WANT TO DO YET
-	BST Tree;
-    vector<char> temp_char_holder;
-    for (int i = 0; i < str.length(); ++i)
-    {
-        if (isspace(str[i]))
-        {
-            //cout << " " << endl;
-            continue;
-        }
-        if (!isalpha(str[i]))
-        {
-            cout << "Unrecognized character encountered. Only eneter letters from English alphabet. Please try again. Ending program." << endl;
-            return;
-        }
-        else
-        {
-            str[i] = tolower(str[i]);
-            temp_char_holder.push_back(str[i]);
-        }
-
-    }
-    cout << "Encoding the following string: " << str << endl;
-    for (int i = 0; i < temp_char_holder.size(); ++i)
-    {
-        
-        cout << Tree.find(temp_char_holder.at(i));
-    }
-    cout << endl;
-
-}
 
 
-void decoder(string str)
-{//decodes a given string by removing any spaces and converting to char SAME AS ABOVE MIGHT NEED TO CREATE A FUNCTION WITHIN THE CLASS? NOT SURE
-	
-    cout << "Decoding the given morse code: " << str << endl;
-    return;
-}
+
