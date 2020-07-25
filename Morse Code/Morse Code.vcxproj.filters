@@ -24,10 +24,10 @@
     <ClCompile Include="Conversion_Def.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="HashTbl_Def.cpp">
+    <ClCompile Include="BST_Def.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="BST_Def.cpp">
+    <ClCompile Include="Create_Dictionary_Def.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,10 +38,10 @@
     <ClInclude Include="BST.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HashTbl.h">
+    <ClInclude Include="Conversions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Conversions.h">
+    <ClInclude Include="Create_Dictionary.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

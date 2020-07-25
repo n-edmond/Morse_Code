@@ -3,7 +3,7 @@
 #define CONVERSIONS_H
 #include<string>
 #include "BST.h"
-#include "HashTbl.h"
+#include "Create_Dictionary.h"
 
 using namespace std;
 
@@ -29,7 +29,7 @@ public:
 
 private:
 	BST morseTree;
-	HashTbl morseHash;
+	Create_Dictionary morseKey;
 	int print_count = 10;
 	void print_BST(BTNode* node, int space);
 };

@@ -142,14 +142,14 @@
     <ClCompile Include="Binary_Tree Def.cpp" />
     <ClCompile Include="BST_Def.cpp" />
     <ClCompile Include="Conversion_Def.cpp" />
-    <ClCompile Include="HashTbl_Def.cpp" />
+    <ClCompile Include="Create_Dictionary_Def.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Binary_Tree.h" />
     <ClInclude Include="BST.h" />
     <ClInclude Include="Conversions.h" />
-    <ClInclude Include="HashTbl.h" />
+    <ClInclude Include="Create_Dictionary.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

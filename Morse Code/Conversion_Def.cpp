@@ -27,7 +27,7 @@ void Convert::retrieve_File_Info()
 		string morse = t_str.substr(1);//retrieves the morse code (starts at 1)
 		BTNode* m_r = morseTree.get_Root();//retrieves root
 		morseTree.insert(m_r, morse, alph);//adds to binary tree
-		morseHash.add_To_Hash(alph, morse);//adds to dictionary
+		morseKey.add_To_Dict(alph, morse);//adds to dictionary
 
 	}
 
@@ -107,10 +107,10 @@ string Convert::encoder(string input)
 	for (string::iterator iter = input.begin(); iter != input.end(); ++iter)
 	{
 		alph = *iter;
-		result.append(morseHash.get_Morse_Characters(alph));
+		result.append(morseKey.get_Morse_Characters(alph));
 		result.append(" ");
 	}
-
+	;
 	return result;
 }
 
